@@ -20,6 +20,6 @@ public class ShipTeleporting : MonoBehaviour
 
         if (nextTP) position1.transform.position = this.transform.position;
 
-        if (Time.time == 0) Teleport();  // please give me a headset cable so i can get rid of this atrocity
+        //if (Time.time == 0) Teleport();  // please give me a headset cable so i can get rid of this atrocity
     }
 }
