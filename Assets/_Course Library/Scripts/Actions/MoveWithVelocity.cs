@@ -3,6 +3,7 @@
 /// <summary>
 /// Move an object using velocity
 /// </summary>
+
 [RequireComponent(typeof(Rigidbody))]
 public class MoveWithVelocity : MonoBehaviour
 {
