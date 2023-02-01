@@ -1,0 +1,40 @@
+
+almond --
+xr teleportation
+sliding doors for command center
+ship movement through drag or w/e command center thing
+ship rotation through wheel thing
+socket on head of player
+
+
+
+emilia --
+UI
+instructor thing
+speech bubbles + text
+hands
+hand tracking
+player model
+stickmen around the ship
+adjusting the shaders
+
+
+markku --
+dialogue
+a very complicated and SF button model
+vertical monitor for radar (square ish)
+add balloons for the kids of the ship
+
+
+
+otto --
+button
+black hole and succc script
+add radar
+
+
+Today work schedule:
+10->14 implement my stuff (peanut aka armand aka almond)
+14->17 markku stuff
+17->21 emilia stuff then
+21->??? otto prayge
