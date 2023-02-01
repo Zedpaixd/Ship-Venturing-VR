@@ -12,7 +12,7 @@ public class Radar : MonoBehaviour
     private float rotationSpeed;
     private Transform sweepTransform;
     private float radarDistance;
-    private List<Collider> colliderList;
+    public List<Collider> colliderList;
 
     private void Start()
     {
@@ -29,24 +29,24 @@ public class Radar : MonoBehaviour
 
     private void Update()
     {
-        float previousRotation = (sweepTransform.eulerAngles.z % 360) - 180;
-        sweepTransform.eulerAngles -= new Vector3(0, 0, rotationSpeed * Time.deltaTime);
-        float currentRotation = (sweepTransform.eulerAngles.z % 360) -180;
+        float previousRotation = (sweepTransform.eulerAngles.y % 360) - 180;
+        sweepTransform.eulerAngles -= new Vector3(0, rotationSpeed * Time.deltaTime, 0);
+        float currentRotation = (sweepTransform.eulerAngles.y % 360) - 180;
 
         if(previousRotation < 0 && currentRotation >= 0)
         {
             colliderList.Clear();
         }
 
-        RaycastHit[] raycastHitArray = Physics.RaycastAll(transform.position, GetVectorFromAngle(sweepTransform.eulerAngles.z), radarDistance, layerMask);
+        RaycastHit[] raycastHitArray = Physics.RaycastAll(transform.position, GetVectorFromAngle(sweepTransform.eulerAngles.y), radarDistance, layerMask);
         foreach(RaycastHit raycastHit in raycastHitArray)
         {
             if (raycastHit.collider != null)
             {
-                if (colliderList.Contains(raycastHit.collider))
+                if (!colliderList.Contains(raycastHit.collider))
                 {
                     colliderList.Add(raycastHit.collider);
-                    RadarPing radarPing = Instantiate(pfRadarPing, raycastHit.point, Quaternion.identity).GetComponent<RadarPing>();
+                    Instantiate(pfRadarPing, raycastHit.point, Quaternion.Euler(90,0,0));
                 }
             }
         }
@@ -56,6 +56,6 @@ public class Radar : MonoBehaviour
     public static Vector3 GetVectorFromAngle(float angle)
     {
         float angleRad = angle * (Mathf.PI / 180f);
-        return new Vector3(Mathf.Cos(angleRad), Mathf.Sin(angleRad));
+        return new Vector3(Mathf.Cos(-angleRad),0, Mathf.Sin(-angleRad));
     }
 }

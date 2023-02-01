@@ -22,12 +22,16 @@ public class FakeParenting: MonoBehaviour
 
     void Update()
     {
-        Vector3 newPosition = FakeParent.transform.TransformPoint(FakePos);
-        Vector3 newForward = FakeParent.transform.TransformDirection(FakeForward);
-        Vector3 newUp = FakeParent.transform.TransformDirection(FakeUp);
-        Quaternion newrot = Quaternion.LookRotation(newForward, newUp);
-        transform.position = newPosition;
-        transform.rotation = newrot;
+        if (FakePos == null)
+        {
+            Vector3 newPosition = FakeParent.transform.TransformPoint(FakePos);
+            Vector3 newForward = FakeParent.transform.TransformDirection(FakeForward);
+            Vector3 newUp = FakeParent.transform.TransformDirection(FakeUp);
+            Quaternion newrot = Quaternion.LookRotation(newForward, newUp);
+            transform.position = newPosition;
+            transform.rotation = newrot;
+        }
+        
     }// pepehands im not smart enough
  
  }

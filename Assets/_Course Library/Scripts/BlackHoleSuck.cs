@@ -10,6 +10,7 @@ public class BlackHoleSuck : MonoBehaviour
     public float DistanceMultiplier; 
 
     public LayerMask LayersToPull;
+    public TeleportPlayer teleportPlayer;
 
     void FixedUpdate()
     {
@@ -29,6 +30,16 @@ public class BlackHoleSuck : MonoBehaviour
 
 
             rb.AddForce(direction.normalized * (GravitationalPull / distance) * rb.mass * Time.fixedDeltaTime);
+        }
+        
+        
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject)
+        {
+            Destroy(collision.gameObject);
+            teleportPlayer.Teleport();
         }
     }
 }

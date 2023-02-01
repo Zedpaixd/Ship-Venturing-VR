@@ -30,12 +30,12 @@ public class RadarPing : MonoBehaviour
         }
     }
 
-    public void SetColor()
+    public void SetColor(Color color)
     {
         this.color = color;
     }
 
-    public void OnConnectedToServer()
+    public void SetDisappearTimer(float disappearTimerMax)
     {
         this.disappearTimerMax = disappearTimerMax;
         disappearTimer = 0f;
