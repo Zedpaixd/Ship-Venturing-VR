@@ -1,10 +1,14 @@
 
 almond --
-xr teleportation
-sliding doors for command center
+xr teleportation                                                  partly done
+sliding doors for command center                                  done
 ship movement through drag or w/e command center thing
 ship rotation through wheel thing
-socket on head of player
+socket on head of player                                          done
+
+
+TO FIX:
+   Rotation of command center things pls as i can not do my job otherwise - Armand
 
 
 

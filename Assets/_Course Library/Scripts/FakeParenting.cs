@@ -28,6 +28,6 @@ public class FakeParenting: MonoBehaviour
         Quaternion newrot = Quaternion.LookRotation(newForward, newUp);
         transform.position = newPosition;
         transform.rotation = newrot;
-    }
+    }// pepehands im not smart enough
  
  }
