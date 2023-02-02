@@ -13,6 +13,7 @@ public class Radar : MonoBehaviour
     private Transform sweepTransform;
     private float radarDistance;
     public List<Collider> colliderList;
+    public PlayQuickSound playRadarSound;
 
     private void Start()
     {
@@ -47,6 +48,7 @@ public class Radar : MonoBehaviour
                 {
                     colliderList.Add(raycastHit.collider);
                     Instantiate(pfRadarPing, raycastHit.point, Quaternion.Euler(90,0,0));
+                    playRadarSound.Play();
                 }
             }
         }
