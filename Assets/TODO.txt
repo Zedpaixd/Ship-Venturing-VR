@@ -1,15 +1,6 @@
 
 almond --
-xr teleportation                                                  partly done
-sliding doors for command center                                  done
-ship movement through drag or w/e command center thing
-ship rotation through wheel thing
-socket on head of player                                          done
-
-
-TO FIX:
-   Rotation of command center things pls as i can not do my job otherwise - Armand
-
+done with everything, can help with anything else
 
 
 emilia --
@@ -33,12 +24,4 @@ add balloons for the kids of the ship
 
 otto --
 button
-black hole and succc script
-add radar
-
-
-Today work schedule:
-10->14 implement my stuff (peanut aka armand aka almond)
-14->17 markku stuff
-17->21 emilia stuff then
-21->??? otto prayge
+black hole and succc script........ not a png

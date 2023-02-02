@@ -14,10 +14,10 @@ TagManager:
   - HouseModel
   - WristStuff
   - Raycasts
-  - 
-  - 
-  - 
-  - 
+  - Radar
+  - RadarPingable
+  - Player
+  - Ship
   - 
   - 
   - 
