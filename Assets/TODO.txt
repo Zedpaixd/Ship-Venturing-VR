@@ -4,12 +4,7 @@ done with everything, can help with anything else
 
 
 emilia --
-UI
-instructor thing
-speech bubbles + text
-hands
 hand tracking
-player model
 stickmen around the ship
 adjusting the shaders
 
