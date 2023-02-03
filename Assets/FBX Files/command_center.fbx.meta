@@ -3,7 +3,87 @@ guid: 5a3dae510b935e34aabc125a8ea0cadb
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 6f2947e99c0c6684a98427764c2e33fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 1222c04ca55999b4c99e37104e954b65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Material
+    second: {fileID: 2100000, guid: 9ddc036a649e2f241bffe2d9cd9fb231, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aluminum_mat
+    second: {fileID: 2100000, guid: aaa0a6a9126c9f5488ecab7383075ce4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: autopilot_ring_mat
+    second: {fileID: 2100000, guid: df68a6a4e9b722549a3cdec988210e5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: button_mat
+    second: {fileID: 2100000, guid: 256acd41fa6c2134cb82c4c077a78d0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair_mat
+    second: {fileID: 2100000, guid: 276d0ab78b1ffee49ae8c5dff3259d0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: console_base_mat
+    second: {fileID: 2100000, guid: edee4ad0ca0e2b14c864ac688eac7f1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: electronics_plastic
+    second: {fileID: 2100000, guid: 4173c76121566464e9f2be239bbbb2a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glossy_plastic
+    second: {fileID: 2100000, guid: 343cff7157210684ea54e16331713d61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: minotr_screen
+    second: {fileID: 2100000, guid: a533b0c80ee84c4488c12adedcd11fd3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: monitor_mat
+    second: {fileID: 2100000, guid: 46f5fb7f5189dc3438c7a66ed0c1847e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mouse_ball_mat
+    second: {fileID: 2100000, guid: d8b8a257fdc75254692a6c7caad8d5ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mouse_button_mat
+    second: {fileID: 2100000, guid: ccc2fcafd8b3b3043984e9922aa09cd1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: screen_frame
+    second: {fileID: 2100000, guid: 82edd37434aee904fb498067b7c7c451, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: textmat
+    second: {fileID: 2100000, guid: d93192b1f2c66e445bb46262890f54b9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

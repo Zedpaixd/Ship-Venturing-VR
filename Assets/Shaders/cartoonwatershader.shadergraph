@@ -2613,7 +2613,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "8e034d6117084259897f226f6a208dc3",
     "m_Id": 0,
-    "m_DisplayName": "GraNoiseStrenght",
+    "m_DisplayName": "GraNoisestg",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
