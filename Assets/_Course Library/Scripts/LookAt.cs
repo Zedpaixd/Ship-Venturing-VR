@@ -22,8 +22,10 @@ public class LookAt : MonoBehaviour
     {
         if (target) // make sure target exists
         {
-            var rotationAngle = Quaternion.LookRotation(target.position - transform.position); // get angle for rotation
+            /*var rotationAngle = Quaternion.Inverse(Quaternion.LookRotation(target.position - transform.position)); // get angle for rotation
             transform.rotation = Quaternion.Slerp(transform.rotation, rotationAngle, Time.deltaTime * turnSpeed); // rotate
+            */
+            transform.rotation = Quaternion.Inverse(Quaternion.LookRotation(target.position));
         }
     }
 

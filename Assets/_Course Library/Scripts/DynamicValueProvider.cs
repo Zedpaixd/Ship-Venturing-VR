@@ -23,7 +23,7 @@ public class DynamicValueProvider : MonoBehaviour
 
     private void Update()
     {
-        if(WrapAngle(transform.eulerAngles.z) != originalRotation)
+        /*if(WrapAngle(transform.eulerAngles.z) != originalRotation)
         {
             originalRotation = WrapAngle(transform.eulerAngles.z);
             rotateShip();
@@ -33,7 +33,7 @@ public class DynamicValueProvider : MonoBehaviour
         {
             originalSpeedRotation = WrapAngle(this.transform.eulerAngles.x);
             changeSpeed();
-        }
+        }*/
     }
 
     private void VariableChangeHandler(float newVal)
@@ -42,7 +42,7 @@ public class DynamicValueProvider : MonoBehaviour
 
     public void changeSpeed()
     {
-        SM.inputVelocity = new Vector3(0, 0, WrapAngle(this.transform.eulerAngles.x)*-1);
+        SM.velocity = WrapAngle(this.transform.eulerAngles.x)*-1;
     }
 
     public void rotateShip()

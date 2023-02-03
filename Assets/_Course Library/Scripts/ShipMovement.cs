@@ -5,7 +5,7 @@ using UnityEngine;
 /// </summary>
 
 
-[RequireComponent(typeof(Rigidbody))]
+// [RequireComponent(typeof(Rigidbody))]   --   fu
 public class ShipMovement : MonoBehaviour
 {
     [Tooltip("Departed")]
@@ -19,13 +19,15 @@ public class ShipMovement : MonoBehaviour
     /*[Tooltip("Apply Movement To")]
     public GameObject[] gameObjects;*/
 
-    public Vector3 inputVelocity = new Vector3(0,0,0);
-    private Rigidbody RB = null;
+    //public Vector3 inputVelocity = new Vector3(0,0,0);
+    public float velocity = 0;
 
-    private void Awake()
+    //private Rigidbody RB = null;
+
+    /*private void Awake()
     {
         RB = GetComponent<Rigidbody>();
-    }
+    }*/
 
     private void FixedUpdate()
     {
@@ -39,11 +41,15 @@ public class ShipMovement : MonoBehaviour
 
     private void ApplyVelocity()
     {
-        Vector3 targetVelocity = inputVelocity * speed;
-        targetVelocity = componentDirection.TransformDirection(targetVelocity);
+        float targetVelocity = velocity * speed;
+
+        transform.Translate(Vector3.forward * targetVelocity);
+
+
+        /*targetVelocity = componentDirection.TransformDirection(targetVelocity);
 
         Vector3 velocityChange = targetVelocity - RB.velocity;
-        RB.AddForce(velocityChange, ForceMode.VelocityChange);
+        RB.AddForce(velocityChange, ForceMode.VelocityChange);*/
         
         /*foreach (var gameObject in gameObjects)
         {
@@ -53,7 +59,7 @@ public class ShipMovement : MonoBehaviour
 
     public void SetForwardVelocity(float value)
     {
-        inputVelocity.z = value;
+        velocity = value;
     }
 
     public void Rotate(float value)
