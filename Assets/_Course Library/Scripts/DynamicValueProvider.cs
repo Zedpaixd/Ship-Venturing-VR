@@ -23,17 +23,21 @@ public class DynamicValueProvider : MonoBehaviour
 
     private void Update()
     {
-        /*if(WrapAngle(transform.eulerAngles.z) != originalRotation)
+
+        if (WrapAngle(transform.eulerAngles.x) > 45) transform.eulerAngles = new Vector3(45,transform.eulerAngles.y,transform.eulerAngles.z);
+        if (WrapAngle(transform.eulerAngles.x) < -45) transform.eulerAngles = new Vector3(-45, transform.eulerAngles.y, transform.eulerAngles.z);   // i hate vr
+
+        if (WrapAngle(transform.eulerAngles.z) != originalRotation && this.transform.name == "wheel1")
         {
             originalRotation = WrapAngle(transform.eulerAngles.z);
             rotateShip();
         }
 
-        if (WrapAngle(transform.eulerAngles.x) != originalSpeedRotation)
+        if (WrapAngle(transform.eulerAngles.x) != originalSpeedRotation && (this.transform.name == "left_gas_lever" || this.transform.name == "right_gas_lever"))
         {
             originalSpeedRotation = WrapAngle(this.transform.eulerAngles.x);
             changeSpeed();
-        }*/
+        }
     }
 
     private void VariableChangeHandler(float newVal)
@@ -42,7 +46,7 @@ public class DynamicValueProvider : MonoBehaviour
 
     public void changeSpeed()
     {
-        SM.velocity = WrapAngle(this.transform.eulerAngles.x)*-1;
+        SM.velocity = (WrapAngle(this.transform.eulerAngles.x)/3)*-1;
     }
 
     public void rotateShip()

@@ -16,6 +16,8 @@ public class ShipMovement : MonoBehaviour
     public Transform componentDirection = null;
     [Tooltip("Rotation")]
     public float angle = 0;
+    [Tooltip("Sea")]
+    public GameObject sea;
     /*[Tooltip("Apply Movement To")]
     public GameObject[] gameObjects;*/
 
@@ -43,7 +45,7 @@ public class ShipMovement : MonoBehaviour
     {
         float targetVelocity = velocity * speed;
 
-        transform.Translate(Vector3.forward * targetVelocity);
+        sea.transform.Translate(Vector3.forward * targetVelocity*-1);
 
 
         /*targetVelocity = componentDirection.TransformDirection(targetVelocity);
@@ -64,7 +66,7 @@ public class ShipMovement : MonoBehaviour
 
     public void Rotate(float value)
     {
-        transform.rotation = Quaternion.Euler(new Vector3(0,value,0));
+        sea.transform.rotation = Quaternion.Euler(new Vector3(0,value,0));
         /*foreach (var gameObject in gameObjects)
         {
             gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, value, 0));
