@@ -11,7 +11,7 @@ public class ShipTeleporting : MonoBehaviour
     public void Teleport()
     {
         this.transform.position = nextTP ? position2.transform.position : position1.transform.position;
-        this.transform.rotation = nextTP ? Quaternion.Euler(new Vector3(0,180,0)) : Quaternion.Euler(new Vector3(0, 0, 0));
+        this.transform.rotation = nextTP ? Quaternion.Euler(new Vector3(0,0,0)) : Quaternion.Euler(new Vector3(0, 120, 0));
         nextTP = !nextTP;
     }
 

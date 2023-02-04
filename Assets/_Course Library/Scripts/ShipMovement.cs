@@ -45,7 +45,7 @@ public class ShipMovement : MonoBehaviour
     {
         float targetVelocity = velocity * speed;
 
-        sea.transform.Translate(Vector3.forward * targetVelocity*-1);
+        sea.transform.Translate(Vector3.forward * targetVelocity*-1, Space.World);
 
 
         /*targetVelocity = componentDirection.TransformDirection(targetVelocity);

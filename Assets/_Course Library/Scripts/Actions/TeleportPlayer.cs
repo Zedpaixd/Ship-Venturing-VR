@@ -14,6 +14,9 @@ public class TeleportPlayer : MonoBehaviour
 
     public void Teleport()
     {
+
+        Debug.Log("asdasd");
+
         if(anchor && provider)
         {
             TeleportRequest request = CreateRequest();
