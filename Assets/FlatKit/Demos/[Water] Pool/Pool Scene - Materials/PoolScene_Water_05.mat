@@ -112,7 +112,7 @@ Material:
     - _ProceduralFoam: 1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _RefractionAmplitude: 0.1
+    - _RefractionAmplitude: 0
     - _RefractionFrequency: 27.42
     - _RefractionScale: -1.4
     - _RefractionSpeed: 0.25
